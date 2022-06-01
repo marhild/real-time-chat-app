@@ -20,6 +20,10 @@ export const messengerReducer = (state=messengerState,action) => {
           }
      }
 
+
+
+
+
      if(type === FRIEND_GET_SUCCESS){
           return {
                ...state,
@@ -56,6 +60,8 @@ export const messengerReducer = (state=messengerState,action) => {
           state.friends[index].msgInfo.status = payload.status;
           return state;
      }
+
+
      
      if(type === MESSAGE_SEND_SUCCESS_CLEAR){
           return {
